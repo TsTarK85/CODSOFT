@@ -7,11 +7,16 @@ body{
     font-family: "Poppins", sans-serif;
     color: white;
 }
+header{
+    position: sticky;   
+    top: 0;              
+    z-index: 1000;
+}
 nav{
     background-color: #1c2541;
     display: flex;
     justify-content: space-around;
-    height: 80px;
+    height: 80px; 
 }
 .right{
     margin: 20px;
