@@ -1,0 +1,10 @@
+<div class="third1">
+            <!-- <span class="head2">We Welcomes You</span> -->
+            <span class="head2">Sign In</span>
+            <!-- <span>An affordable and easy platform to study anything</span>
+            <span>Increase your knowledge and skillset</span> -->
+            <div class="third3"> 
+                <input type="text" placeholder="Email Address">
+                <button>Create Free Account</button>
+            </div>
+        </div>
