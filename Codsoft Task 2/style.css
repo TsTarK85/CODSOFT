@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0b132b;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+nav{
+    background-color: #1c2541;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+}
+.right{
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.left{
+    margin: 25px;
+}
+.left ul{
+    display: flex;
+    gap: 28px;
+
+}
+.left ul li{
+    list-style: none;
+}
+.left ul li a{
+    text-decoration: none;
+    color: white;
+}
+.left ul li a:hover{
+    color: rgb(204, 46, 204);
+    font-size: 1.04rem;
+}
+.first{
+    display: flex;
+    margin: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftsection img{
+    height: 400px;
+    width: 450px;
+}
+.rightsection div{
+    font-size: 36px;
+}
+.rightsection div span{
+    font-size: 36px;
+    color: rgb(148, 26, 148);
+}
+.rightsection span{
+    font-size: 36px;
+    color: rgb(148, 26, 148);
+}
+hr{
+    border: 0;
+    background-color: #21387c;
+    height: 2.3px;
+    margin: 40px 84px;
+}
+.btn{
+    background-color: #1c2541;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#21387c;
+}
+.rightsection .btns{
+    padding-top: 28px;
+}
+.btn2{
+    margin-left: 10px;
+}
+.second{
+    display: flex;
+    padding-bottom: 40px;
+}
+.sec-head{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.img-sec{
+    height: 700px;
+    width: 500px;
+    background-color: #395dcb;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.img-sec img{
+    height: 700px;
+    width: 430px;
+}
+.sec-right{
+    max-width: 40%;
+}
+.sec-left{
+    height: 500px;
+    width: 700px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sec-desc{
+    font-size: 20px;
+}
+.desc1{
+    font-size: 20px;
+}
+.desc2{
+    font-size: 17px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #94a5d1;
+}
+.third-head2{
+    margin: 0px 140px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.third-head1{
+    margin: 0px 140px;
+    font-size: 15px;
+    color: grey;
+}
+.third{
+    height: 350px;
+}
+.box{
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 0px 140px;
+}
+.vertical{
+    width: 1px;
+    height: 93px;
+    background-color: white;
+    margin: 0px 190px;
+}
+.box-vertical{
+    display: flex;
+}
+.vertical-text{
+    position: relative;
+    top: 65px;
+    left: -10px;
+    font-size: 20px;
+}
+.image-top{
+    width: 25px;
+    position: relative;
+    top: -32px;
+    left: -8px;
+}
+.img1{
+    width: 35px;
+    top: -40px;
+    left: -15px;
+}
+.img2{
+    width: 35px;
+    top: -43px;
+    left: -15px;
+}
+.txt1{
+    top: 54px;
+}
+.fourth{
+    height: 1276px;
+}
+.f-head1{
+    font-size: 15px;
+    color: gray;
+    margin: 0px 100px;
+}
+.f-head2{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0px 100px;
+}
+.f-head3{
+    font-size: 25px;
+    margin: 13px 100px;
+    margin-top: 40px;
+}
+.f-img1{
+    height: 200px;
+    width: 300px;
+}
+.f-grid-img1{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr;
+    gap: 10px;
+    margin: 0px 100px;
+}
+.f-desc1{
+    display: flex;
+    align-items: center;
+}
+.f-list{
+    margin-right: 15px;
+    font-size: 22px;
+}
+.f-list ol{
+    margin-left: -35px;
+}
+.f-head4{
+    font-size: 35px;
+    font-weight: 650;
+    margin-left: -62px;
+    margin-bottom: 17px;
+}
+.f-head5{
+    font-size: 25px;
+    margin: 13px 100px;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.f-grid-img2{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 10px;
+    margin-right: 115px;
+}
+.f-grid-img3{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 10px;
+    margin-top: 25px;
+    position: relative;
+    top: 8px;
+}
+.f-desc2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-img2{
+    height: 200px;
+    width: 300px;
+}
+.f-head6{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    margin-bottom: -21px;
+}
+.f-desc5{
+    font-size: 20px;
+    margin-left: 95px;
+    margin-top: 40px;
+    width: 88vw;
+}
+.f-desc6{
+    font-size: 20px;
+    margin-left: 95px;
+    margin-top: 21px;
+}
+.f-desc6 a{
+    text-decoration: none;
+    color: #5b7fe9;
+    font-weight: 700;
+}
+.fif-head1{
+    color: gray;
+    margin-left: 93px;
+}
+.fif-head2{
+    font-size: 33px;
+    font-weight: bolder;
+    margin-left: 90px;
+}
+.contact-detail{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 95vw;
+    margin-left: 30px;
+}
+.contact-detail svg{
+    position: relative;
+    top: 5px;
+}
+.contact-no :nth-child(2){
+    font-size: 20px;
+}
+.email :nth-child(2){
+    font-size: 20px;
+}
+.alternate-no :nth-child(2){
+    font-size: 20px;
+}
+.contact-no :nth-child(3){
+    font-size: 20px;
+    color: #ae94f4;
+}
+.email :nth-child(3){
+    font-size: 20px;
+    color: #ae94f4;
+}
+.alternate-no :nth-child(3){
+    font-size: 20px;
+    color: #ae94f4;
+}
+.fif-head3{
+    font-size: 33px;
+    font-weight: bolder;
+    margin-left: 90px;
+    margin-top: 60px;
+}
+.social-media-details{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 95vw;
+    margin-left: 30px;
+    margin-left: 30px;
+}
+.social-media-details svg{
+    position: relative;
+    top: 5px;
+}
+.instagram :nth-child(2){
+    font-size: 20px;
+}
+.linkedin :nth-child(2){
+    font-size: 20px;
+}
+.github :nth-child(2){
+    font-size: 20px;
+}
+.instagram :nth-child(3){
+    font-size: 20px;
+    color: #ae94f4;
+}
+.linkedin :nth-child(3){
+    font-size: 20px;
+    color: #ae94f4;
+    cursor: pointer;
+}
+.github :nth-child(3){
+    font-size: 20px;
+    color: #ae94f4;
+    cursor: pointer;
+}
+.fifth{
+    padding-bottom: 25px;
+}
+.instagram :nth-child(3) a{
+    text-decoration: none;
+}
+.linkedin :nth-child(3) a{
+    text-decoration: none;
+    color: #ae94f4;
+}
+.github :nth-child(3) a{
+    text-decoration: none;
+    color: #ae94f4;
+}
+.copyright{
+    padding-top: 50px;
+    margin-left: 85px;
+}
+.end{
+    background-color: #0c1223;
+    padding-top: 40px;
+    margin-top: 35px;
+}
