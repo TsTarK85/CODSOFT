@@ -1,13 +1,16 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav{
-    background-color:rgb(241, 241, 226);
-    padding: 3px;
+    position: sticky;   
+    top: 0;             
+    z-index: 1000;
+    background-color: #f1f1e2;
+    padding: 5px;
     height: 10vh;
-    width: 100vw;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .first{
     display: flex;
@@ -19,17 +22,20 @@ nav{
     justify-content: space-between;
 }
 .nv1{
-    list-style-type: none;
+    list-style: none;
     display: flex;
     padding-left: 35px;
-    gap: 20px;
-    font-size: 14px;
+    gap: 25px;
+    font-size: 15px;
     align-items: center;
-    justify-content: space-around;
     cursor: pointer;
 }
+.nv1 li span:hover{
+    color: #5093ba;
+    font-size: 16px;
+}
 .hd{
-    padding-left: 150px;
+    padding-left: 120px;
     font-size: 14px;
 }
 .nv1 svg{
@@ -37,44 +43,51 @@ nav{
     justify-content: center;
 }
 .hd img{
-    height: 40px;
-    width: 150px;
+    height: 45px;
+    width: 155px;
 }
 .nv2{
-    padding-right: 100px;
+    padding-right: 80px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 .log{
-    font-size: 15px;
-    padding: 8px;
-    border: 0px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
     cursor: pointer;
+    background-color: #d6d6d6;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+.log:hover{
+    background-color: #bdbdbd;
 }
 .sign{
-    font-size: 15px;
-    padding: 8px;
+    font-size: 16px;
+    padding: 10px;
     border-radius: 25px;
-    background-color: aqua;
-    border: 1px solid black;
+    background-color: #00d4ff;
+    border: 1px solid #333;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sign:hover{
+    background-color: #00b3e1;
 }
 .second{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    margin: 0px;
-    align-items: center;
-    background-color: rgb(73, 179, 228);
+    background-color: #49b3e4;
     height: 15vh;
-    width: 100vw;
+    align-items: center;
 }
 .sec1 img{
     height: 90px;
     width: 90px;
     padding-left: 5px;
     transform: rotate(315deg);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .sec2{
     display: flex;
@@ -83,17 +96,21 @@ nav{
 }
 .sec4 button{
     font-size: 16px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 25px;
-    background-color: yellow;
+    background-color: #ffeb3b;
     border: 1px solid black;
-    padding-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sec4 button:hover{
+    background-color: #e5d300;
 }
 .sec2 :nth-child(2){
     font-size: 26px;
-    background-color: yellow;
-    padding: 6px;
-    font-weight: bolder;
+    background-color: #ffeb3b;
+    padding: 8px;
+    font-weight: bold;
     color: black;
 }
 .sec2 :nth-child(1){
@@ -106,9 +123,9 @@ nav{
 .third1{
     display: flex;
     flex-direction: column;
-    margin: 125px;
-    gap: 8px;
-    padding-top: 42px;
+    margin: 120px;
+    gap: 10px;
+    padding-top: 45px;
 }
 .third{
     background-image: url("4.jpg");
@@ -120,37 +137,47 @@ nav{
 .head2{
     font-size: 60px;
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: #333;
 }
 .third2{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 }
 .third3{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    padding-top: 18px;
+    gap: 15px;
+    padding-top: 20px;
 }
 input{
     width: 340px;
     border-radius: 30px;
     padding-left: 25px;
-    color: white;
+    color: #333;
+    background-color: #f0f0f0;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+input:focus{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .third3 button{
     height: 40px;
     width: 250px;
     border-radius: 30px;
     font-size: 20px;
-    background-color: rgb(73, 179, 228) ;
+    background-color: #49b3e4;
     color: white;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #333;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.third3 button:hover{
+    background-color: #41a2ce;
 }
 .third4{
-    padding-top: 67px;
+    padding-top: 70px;
     height: 440px;
     width: 580px;
     display: flex;
@@ -168,45 +195,54 @@ input{
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(155, 211, 237);
+    background-color: #9bd3ed;
     border-radius: 30px;
     padding: 6px;
     font-size: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.box:hover{
+    background-color: #86bfd6;
 }
 .fourth{
     display: flex;
     flex-direction: row;
-    gap: 73px;
-    padding-top: 106px;
+    gap: 70px;
+    padding-top: 110px;
     height: 500px;
+    padding-bottom: 75px;
 }
 .box4{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 .img img{
     height: 250px;
     width: 340px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .sh{
     height: 80px;
     width: 350px;
 }
 .sh div{
-    font-size: 15px;
+    font-size: 16px;
+    color: #333;
 }
 .bx{
-    padding-left: 165px;
+    padding-left: 150px;
 }
 .head3{
     padding-top: 20px;
+    font-size: 28px;
+    color: #444;
 }
 .sep{
     height: 4px;
-    width: 100vw;
-    background-color: rgb(0, 0, 0);
+    background-color: #333;
 }
 .fifth{
     display: flex;
@@ -221,16 +257,17 @@ input{
     height: 400px;
     width: 700px;
     justify-content: center;
-    /* align-items: center; */
-    padding-left: 142px;
+    padding-left: 140px;
     gap: 20px;
 }
 .head4{
     font-size: 55px;
-    font-weight: bold;
+    font-weight: bolder;
+    color: #333;
 }
 .para{
     font-size: 18px;
+    line-height: 1.5;
 }
 .img2 img{
     height: 400px;
@@ -243,7 +280,6 @@ input{
     justify-content: space-around;
     align-items: center;
     height: 600px;
-    width: 100vw;
 }
 .six1{
     padding-left: 50px;
@@ -258,7 +294,7 @@ input{
 .six2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 93px;
+    padding-top: 90px;
     gap: 70px;
 }
 .media{
@@ -268,9 +304,10 @@ input{
 .comp{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 .bld{
     font-weight: bold;
     font-size: 20px;
+    color: #333;
 }
